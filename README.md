@@ -7,6 +7,6 @@ project/
 │   ├── dataloader.py
 │   ├── helper.py
 │   └── __init__.py
-├── log/
-│   ├── logger.py
-│   └── __init__.py
+└── log/
+    ├── logger.py
+    └── __init__.py
