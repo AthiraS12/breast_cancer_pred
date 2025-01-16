@@ -46,7 +46,11 @@ def main():
     top_features = select_top_features(rf, X_train)
     X_train_top = X_train[:, top_features]
     X_test_top = X_test[:, top_features]
-    print(X_train_top)
+    
+    #Print top features
+    print("Selected Top Features:")
+    for index in top_features:
+        print(feature_names[index])
 
     # Initialize and train the Logistic Regression model
     log_reg = LogisticRegression(max_iter=10000, random_state=42)
