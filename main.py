@@ -48,9 +48,9 @@ def main():
     X_test_top = X_test[:, top_features]
     
     #Print top features
-    print("Selected Top Features:")
+    print("Selected Top Features (by index):")
     for index in top_features:
-        print(feature_names[index])
+        print(index)
 
     # Initialize and train the Logistic Regression model
     log_reg = LogisticRegression(max_iter=10000, random_state=42)
