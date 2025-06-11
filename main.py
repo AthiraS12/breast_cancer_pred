@@ -50,7 +50,7 @@ def main():
     #Print top features
     print("Selected Top Features (by index and name):")
     for index in top_features:
-        print(f"Index: {index}, Column: {column_names[index]}")
+        print(f"Index: {index})
 
     # Initialize and train the Logistic Regression model
     log_reg = LogisticRegression(max_iter=10000, random_state=42)
